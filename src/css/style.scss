@@ -11,11 +11,16 @@ $light : #F7EFE5;
     font-family: 'Montserrat';
 }
 
+
+
 body{
     background: $dark;
     color: $light;
 }
 
+.dt-light{
+    color:$light;
+}
 .dt-dark{
     color:$dark;
 }
@@ -66,7 +71,14 @@ h1,h2,h3,h4{
         }
     }
 }
-
+.btn-outline-dt{
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.7em;
+    padding: 6px 12px;
+    border: 1px solid $light;
+}
 .case {
     &-item{
         img{

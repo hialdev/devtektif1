@@ -11,6 +11,10 @@ body {
   color: #F7EFE5;
 }
 
+.dt-light {
+  color: #F7EFE5;
+}
+
 .dt-dark {
   color: #1C1D1F;
 }
@@ -66,6 +70,15 @@ h1, h2, h3, h4 {
 }
 .toggle span:first-child {
   width: 50%;
+}
+
+.btn-outline-dt {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.7em;
+  padding: 6px 12px;
+  border: 1px solid #F7EFE5;
 }
 
 .case-item img {

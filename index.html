@@ -12,13 +12,13 @@
 </head>
 <body>
     <div class="devtektif w-full">
-        <header class="fixed top-0 start-0 end-0 pt-4 px-5">
+        <header class="fixed top-0 start-0 end-0 pt-4 px-5 z-50">
             <div class="container mx-auto">
                 <div class="flex items-center justify-between gap-5">
                     <a href="#" class="pointer-cursor block">
                         <img src="./src/images/logo.svg" alt="Logo" class="w-[2em] h-[2em]">
                     </a>
-                    <div class="toggle">
+                    <div class="toggle" id="toggle">
                         <span></span>
                         <span></span>
                     </div>
@@ -45,9 +45,9 @@
                     </div>
                 </div>
             </section>
-            <section class="p-5 py-[5em] dt-dark" style="background: url('./src/images/divtorn.png') no-repeat top center;background-size: 100%;">
+            <section id="dark" class="dark-section p-5 py-[5em] dt-dark" style="background: url('./src/images/divtorn.png') no-repeat top center;background-size: 100%;">
                 <div class="container mx-auto pt-[3em]">
-                    <div class="relative">
+                    <div class="relative pb-[7em]">
                         <div class="" style="writing-mode: vertical-rl; text-orientation: sideways;">
                             <h2 class="text-9xl dt-purple uppercase face-28d">Case</h2>
                             <div class="flex items-center gap-6 small-caps">
@@ -56,7 +56,7 @@
                                 <hr class="line bg-white">
                             </div>
                         </div>
-                        <div class="absolute top-0 end-0 start-0 py-[7em]">
+                        <div class="absolute top-0 end-0 start-0 pt-[7em]">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
 
@@ -131,6 +131,32 @@
                     </div>
                 </div>
             </section>
+
+            <section class="dark-section p-5 py-[8em] mt-[6em] h-screen" style="background: radial-gradient(144.58% 54.95% at 76.25% 44.58%, rgba(28, 29, 31, 0.00) 0%, rgba(28, 29, 31, 0.69) 34.65%, #1C1D1F 61.57%, #1C1D1F 100%), url('./src/images/news.png'), lightgray 50% / cover no-repeat;">
+                <div class="container h-full mx-auto">
+                    <div class="flex flex-col h-full items-start justify-between">
+                        <h2 class="text-8xl face-28d dt-purple uppercase mb-3">Blog</h2>
+                        <p class="small-caps mb-5">The notebook for sharing of investigation and journey insight</p>
+                        <a href="" class="btn-outline-dt dt-light">
+                            Go To Blog
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6666 1.33337H18.6666V9.33337H17.3333V3.60937L2.47195 18.472L1.52795 17.528L16.3906 2.66671H10.6666V1.33337Z" fill="#F7EFE5"/>
+                            </svg>
+                        </a>
+
+                        <div class="inline-flex items-center gap-7 mt-auto">
+                            <div>
+                                <div class="text-4xl font-bold dt-purple">14+</div>
+                                <p class="small-caps">Posts</p>
+                            </div>
+                            <div>
+                                <div class="text-4xl font-bold dt-purple">7123+</div>
+                                <p class="small-caps">Fedoras</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             
@@ -151,6 +177,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });    
 </script>
+<script src="./src/js/script.js"></script>
 
 </body>
 </html>
