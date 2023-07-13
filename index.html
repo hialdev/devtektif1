@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    
+</head>
+<body>
+    <div class="devtektif w-full">
+        <header class="fixed top-0 start-0 end-0 pt-4 px-5">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between gap-5">
+                    <a href="#" class="pointer-cursor block">
+                        <img src="./src/images/logo.svg" alt="Logo" class="w-[2em] h-[2em]">
+                    </a>
+                    <div class="toggle">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="p-5 py-[5em] dt-dark" style="background: url('./src/images/texture.png') no-repeat; background-size: cover;">
+                <div class="container mx-auto">
+                    <div class="flex items-center gap-6">
+                        <h1 class="face-28d text-3xl whitespace-nowrap">We Are</h1>
+                        <hr class="line" />
+                    </div>
+                    <h1 class="dt-purple face-28d text-8xl relative z-10">Problem Solver</h1>
+                    <div class="relative">
+                        <img src="./src/images/hero.png" alt="Hero Image" class="w-full max-h-[38em] object-cover mt-[-4em] block">
+                        <div class="absolute bottom-[2em] end-[2em]">
+                            <div class="flex jusitfy-center items-center p-5 bg-purple dt-dark rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 34 36" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.81035 2.9167C1.8662 2.44346 2.03179 1.9898 2.29392 1.59186C2.55605 1.19391 2.90749 0.862678 3.32024 0.624537C3.73299 0.386396 4.19565 0.24793 4.67136 0.220165C5.14708 0.192401 5.6227 0.276107 6.06035 0.464615C8.27285 1.41045 13.2312 3.65837 19.5229 7.28962C25.8166 10.9229 30.2437 14.0959 32.1666 15.5354C33.8083 16.7667 33.8124 19.2084 32.1687 20.4438C30.2645 21.875 25.8916 25.0063 19.5229 28.6854C13.1479 32.3646 8.24785 34.5854 6.05618 35.5188C4.16868 36.325 2.05619 35.1021 1.81035 33.0667C1.52285 30.6875 0.985352 25.2854 0.985352 17.9896C0.985352 10.6979 1.52077 5.29795 1.81035 2.9167Z" fill="#1C1D1F"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="p-5 py-[5em] dt-dark" style="background: url('./src/images/divtorn.png') no-repeat top center;background-size: 100%;">
+                <div class="container mx-auto pt-[3em]">
+                    <div class="relative">
+                        <div class="" style="writing-mode: vertical-rl; text-orientation: sideways;">
+                            <h2 class="text-9xl dt-purple uppercase face-28d">Case</h2>
+                            <div class="flex items-center gap-6 small-caps">
+                                <hr class="line bg-white">
+                                <h4 class="text-white whitespace-nowrap">Latest Investigated</h4>
+                                <hr class="line bg-white">
+                            </div>
+                        </div>
+                        <div class="absolute top-0 end-0 start-0 py-[7em]">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide case-item relative" style="flex-shrink: 100 !important;">
+                                        <img src="./src/images/case.png" alt="Case Image" class="block h-full w-[20em] absolute top-0 object-cover">
+                                        <div class="p-5 w-[20em] min-h-[30em] flex items-end relative z-10">
+                                            <a href="" class="bg-light p-5 flex flex-col max-w-[20em]">
+                                                <h3 class="line-clamp-2 font-bold small-caps mb-3">Mental Care App With Two Lines Title</h3>
+                                                <div class="flex tag items-center gap-3">
+                                                    <span>ui/ux</span><span>app</span><span>web</span>
+                                                    <div class="ms-auto">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2H28V14H26V5.414L3.70799 27.708L2.29199 26.292L24.586 4H16V2Z" fill="black"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-item relative" style="flex-shrink: 100 !important;">
+                                        <img src="./src/images/case.png" alt="Case Image" class="block h-full w-[20em] absolute top-0 object-cover">
+                                        <div class="p-5 w-[20em] min-h-[30em] flex items-end relative z-10">
+                                            <a href="" class="bg-light p-5 flex flex-col max-w-[20em]">
+                                                <h3 class="line-clamp-2 font-bold small-caps mb-3">Mental Care App With Two Lines Title</h3>
+                                                <div class="flex tag items-center gap-3">
+                                                    <span>ui/ux</span><span>app</span><span>web</span>
+                                                    <div class="ms-auto">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2H28V14H26V5.414L3.70799 27.708L2.29199 26.292L24.586 4H16V2Z" fill="black"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-item relative" style="flex-shrink: 100 !important;">
+                                        <img src="./src/images/case.png" alt="Case Image" class="block h-full w-[20em] absolute top-0 object-cover">
+                                        <div class="p-5 w-[20em] min-h-[30em] flex items-end relative z-10">
+                                            <a href="" class="bg-light p-5 flex flex-col max-w-[20em]">
+                                                <h3 class="line-clamp-2 font-bold small-caps mb-3">Mental Care App With Two Lines Title</h3>
+                                                <div class="flex tag items-center gap-3">
+                                                    <span>ui/ux</span><span>app</span><span>web</span>
+                                                    <div class="ms-auto">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2H28V14H26V5.414L3.70799 27.708L2.29199 26.292L24.586 4H16V2Z" fill="black"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide case-item relative" style="flex-shrink: 100 !important;">
+                                        <img src="./src/images/case.png" alt="Case Image" class="block h-full w-[20em] absolute top-0 object-cover">
+                                        <div class="p-5 w-[20em] min-h-[30em] flex items-end relative z-10">
+                                            <a href="" class="bg-light p-5 flex flex-col max-w-[20em]">
+                                                <h3 class="line-clamp-2 font-bold small-caps mb-3">Mental Care App With Two Lines Title</h3>
+                                                <div class="flex tag items-center gap-3">
+                                                    <span>ui/ux</span><span>app</span><span>web</span>
+                                                    <div class="ms-auto">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2H28V14H26V5.414L3.70799 27.708L2.29199 26.292L24.586 4H16V2Z" fill="black"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
+    </div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    centeredSlides: true,
+    freeMode: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});    
+</script>
+
+</body>
+</html>
