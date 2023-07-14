@@ -33,3 +33,7 @@ window.onscroll = function() {
     toggleChangeBgColor(els);
     console.log('scrolling');
 };
+
+document.querySelector("#toggle").addEventListener("click",function(){
+    this.classList.toggle("active");
+})
