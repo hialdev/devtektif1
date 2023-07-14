@@ -26,6 +26,7 @@ function toggleChangeBgColor(els) {
     }
 
 }
+const delay = ms => new Promise(res => setTimeout(res, ms));
 
 let els = document.getElementsByClassName("dark-section");
 
@@ -34,6 +35,16 @@ window.onscroll = function() {
     console.log('scrolling');
 };
 
-document.querySelector("#toggle").addEventListener("click",function(){
-    this.classList.toggle("active");
+document.querySelector("#toggle").addEventListener("click",async function(){
+    this.classList.add("active");
+    document.querySelector(".close-menu").classList.remove("active");
+    await delay(600);
+    document.querySelector(".menu").classList.add("active");
+});
+
+document.querySelector(".close-menu").addEventListener("click",async function(){
+    this.classList.add("active");
+    document.querySelector("#toggle").classList.remove("active");
+    await delay(600);
+    document.querySelector(".menu").classList.remove("active");
 })
