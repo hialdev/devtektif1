@@ -39,6 +39,8 @@ document.querySelector("#toggle").addEventListener("click",async function(){
     this.classList.add("active");
     document.querySelector(".close-menu").classList.remove("active");
     await delay(600);
+    document.querySelector(".loader").classList.add("active");
+    await delay(300);
     document.querySelector(".menu").classList.add("active");
 });
 
@@ -46,5 +48,7 @@ document.querySelector(".close-menu").addEventListener("click",async function(){
     this.classList.add("active");
     document.querySelector("#toggle").classList.remove("active");
     await delay(600);
+    document.querySelector(".loader").classList.remove("active");
+    await delay(300);
     document.querySelector(".menu").classList.remove("active");
 })
