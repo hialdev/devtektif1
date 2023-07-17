@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="./src/css/style.css">
+    
+    <link href="./dist/style.css" rel="stylesheet">
     
 </head>
 <body>
@@ -43,29 +40,29 @@
                             <h4 class="text-[378px] opacity-30 face-28d dt-purple uppercase font-bold inline-block" style="text-orientation: sideways; /* default */ writing-mode: vertical-rl;">menu</h4>
                             <div class="absolute top-0 start-0 bottom-0 end-0">
                                 <nav class="flex flex-col gap-6 h-full justify-start pt-[4em] dt-dark w-full max-w-[30em] ms-auto me-[30%]">
-                                    <a href="" class="face-oswald font-bold uppercase text-2xl dt-purple">Home</a>
-                                    <a href="" class="face-oswald font-bold uppercase text-2xl">Case</a>
+                                    <a href="./index.html" class="face-oswald font-bold uppercase text-2xl dt-purple">Home</a>
+                                    <a href="./case.html" class="face-oswald font-bold uppercase text-2xl">Case</a>
                                     <ul>
                                         <li class="ps-5 py-4 border-l-4 border-purple">
-                                            <a href="" class="flex items-center gap-5">
+                                            <a href="./case-item.html" class="flex items-center gap-5">
                                                 <span class="font-bold block text-2xl">01</span>
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                                             </a>
                                         </li>
                                         <li class="ps-5 py-4 border-l-4 border-purple">
-                                            <a href="" class="flex items-center gap-5">
+                                            <a href="./case-item.html" class="flex items-center gap-5">
                                                 <span class="font-bold block text-2xl">02</span>
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                                             </a>
                                         </li>
                                         <li class="ps-5 py-4 border-l-4 border-purple">
-                                            <a href="" class="flex items-center gap-5">
+                                            <a href="./case-item.html" class="flex items-center gap-5">
                                                 <span class="font-bold block text-2xl">03</span>
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                                             </a>
                                         </li>
                                     </ul>
-                                    <a href="" class="face-oswald font-bold uppercase text-2xl">Blog</a>
+                                    <a href="./blog.html" class="face-oswald font-bold uppercase text-2xl">Blog</a>
                                     <a href="" class="face-oswald font-bold uppercase text-2xl">Learn</a>
                                     <a href="" class="face-oswald font-bold uppercase text-2xl">Contact</a>
                                 </nav>
@@ -76,7 +73,7 @@
             </div>
         </header>
         <main>
-            <section class="p-5 py-[5em] h-screen" style="background: radial-gradient(54.74% 51.26% at 50.03% 49.95%, rgba(28, 29, 31, 0.40) 0%, rgba(28, 29, 31, 0.76) 46.35%, #1C1D1F 100%), url('./src/images/news.png'), lightgray 50% / cover no-repeat;">
+            <section class="dark-section p-5 py-[5em] h-screen" style="background: radial-gradient(54.74% 51.26% at 50.03% 49.95%, rgba(28, 29, 31, 0.40) 0%, rgba(28, 29, 31, 0.76) 46.35%, #1C1D1F 100%), url('./src/images/news.png'), lightgray 50% / cover no-repeat;">
                 <div class="container mx-auto h-full">
                     <div class="flex flex-col w-full h-full gap-6">
                         <div>
@@ -85,7 +82,7 @@
                         </div>
                         <div>
                             <div class="inline-flex gap-4 items-center border border-light border-2 rounded-full px-3">
-                                <input type="text" name="" id="" placeholder="Search.." class="bg-transparent border-0 outline-0 rounded-full w-full min-w-[20em] max-w-[40em]">
+                                <input type="text" name="" id="" placeholder="Search.." class="bg-transparent border-0 outline-0 rounded-full w-full lg:min-w-[20em] max-w-[40em]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                                     <path d="M13.75 23.75C19.2728 23.75 23.75 19.2728 23.75 13.75C23.75 8.22715 19.2728 3.75 13.75 3.75C8.22715 3.75 3.75 8.22715 3.75 13.75C3.75 19.2728 8.22715 23.75 13.75 23.75Z" stroke="#F7EFE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M26.25 26.25L20.875 20.875" stroke="#F7EFE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -99,6 +96,117 @@
                     </div>
                 </div>
             </section>
+
+            <section class="dt-dark" style="background: url('./src/images/texture.png') no-repeat top center;background-size: cover;">
+                <img src="./src/images/divblack.png" alt="Div Black" class="w-full">
+                <div class="p-5 py-[5em]">
+                    <div class="container mx-auto h-full pt-[4%]">
+                        <div class="flex flex-col lg:flex-row items-center justify-between">
+                            <div class="flex items-center gap-4 mb-7 lg:mb-0">
+                                <div class="text-xl small-caps font-bold">Sort by</div>
+                                <div class="flex items-center gap-4 border-b border-dark cursor-pointer px-4 py-2">
+                                    <div class="small-caps font-semibold">Latest</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 30 30" fill="none">
+                                        <path d="M22.5 11.25L15 18.75L7.5 11.25" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="border border-dark p-1 px-2 text-xs small-caps font-semibold cursor-pointer">category</div>
+                                <div class="border border-dark p-1 px-2 text-xs small-caps font-semibold cursor-pointer bg-dark dt-light">web</div>
+                                <div class="border border-dark p-1 px-2 text-xs small-caps font-semibold cursor-pointer">u/ux</div>
+                                <div class="border border-dark p-1 px-2 text-xs small-caps font-semibold cursor-pointer">data</div>
+                                <div class="border border-dark p-1 px-2 text-xs small-caps font-semibold cursor-pointer">app</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 lg:grid-cols-3 py-[5em] gap-7">
+                            <a href="" class="block blog-item">
+                                <img src="./src/images/blog.png" alt="Blog item" class="block w-full mb-4">
+                                <div class="flex flex-col gap-3 h-[15em]">
+                                    <h3 class="text-sm lg:text-xl font-bold small-caps">The Power of Agile Methodology: Revolutionizing Software Development</h3>
+                                    <p class="line-clamp-3 text-xs lg:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo laboriosam beatae deleniti officiis, distinctio maiores, qui quidem eveniet accusantium dolore, perferendis aliquid culpa iusto? Quibusdam voluptate debitis sint esse laboriosam!</p>
+                                    <div class="text-xs lg:text-sm font-semibold dt-purple mt-auto">July 02, 2022</div>
+                                </div>
+                            </a>
+                            <a href="" class="block blog-item">
+                                <img src="./src/images/blog1.png" alt="Blog item" class="block w-full mb-4">
+                                <div class="flex flex-col gap-3 h-[15em]">
+                                    <h3 class="text-sm lg:text-xl font-bold small-caps">Accelerating Software Development: The Rise of DevOps Practices</h3>
+                                    <p class="line-clamp-3 text-xs lg:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo laboriosam beatae deleniti officiis, distinctio maiores, qui quidem eveniet accusantium dolore, perferendis aliquid culpa iusto? Quibusdam voluptate debitis sint esse laboriosam!</p>
+                                    <div class="text-xs lg:text-sm font-semibold dt-purple mt-auto">July 02, 2022</div>
+                                </div>
+                            </a>
+                            <a href="" class="block blog-item">
+                                <img src="./src/images/blog2.png" alt="Blog item" class="block w-full mb-4">
+                                <div class="flex flex-col gap-3 h-[15em]">
+                                    <h3 class="text-sm lg:text-xl font-bold small-caps">The Democratization of Software Development: The Rise of Low-Code/No-Code Platforms</h3>
+                                    <p class="line-clamp-3 text-xs lg:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo laboriosam beatae deleniti officiis, distinctio maiores, qui quidem eveniet accusantium dolore, perferendis aliquid culpa iusto? Quibusdam voluptate debitis sint esse laboriosam!</p>
+                                    <div class="text-xs lg:text-sm font-semibold dt-purple mt-auto">July 02, 2022</div>
+                                </div>
+                            </a>
+                            <a href="" class="block blog-item">
+                                <img src="./src/images/blog.png" alt="Blog item" class="block w-full mb-4">
+                                <div class="flex flex-col gap-3 h-[15em]">
+                                    <h3 class="text-sm lg:text-xl font-bold small-caps">The Power of Agile Methodology: Revolutionizing Software Development</h3>
+                                    <p class="line-clamp-3 text-xs lg:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo laboriosam beatae deleniti officiis, distinctio maiores, qui quidem eveniet accusantium dolore, perferendis aliquid culpa iusto? Quibusdam voluptate debitis sint esse laboriosam!</p>
+                                    <div class="text-xs lg:text-sm font-semibold dt-purple mt-auto">July 02, 2022</div>
+                                </div>
+                            </a>
+                            <a href="" class="block blog-item">
+                                <img src="./src/images/blog1.png" alt="Blog item" class="block w-full mb-4">
+                                <div class="flex flex-col gap-3 h-[15em]">
+                                    <h3 class="text-sm lg:text-xl font-bold small-caps">Accelerating Software Development: The Rise of DevOps Practices</h3>
+                                    <p class="line-clamp-3 text-xs lg:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo laboriosam beatae deleniti officiis, distinctio maiores, qui quidem eveniet accusantium dolore, perferendis aliquid culpa iusto? Quibusdam voluptate debitis sint esse laboriosam!</p>
+                                    <div class="text-xs lg:text-sm font-semibold dt-purple mt-auto">July 02, 2022</div>
+                                </div>
+                            </a>
+                            <a href="" class="block blog-item">
+                                <img src="./src/images/blog2.png" alt="Blog item" class="block w-full mb-4">
+                                <div class="flex flex-col gap-3 h-[15em]">
+                                    <h3 class="text-sm lg:text-xl font-bold small-caps">The Democratization of Software Development: The Rise of Low-Code/No-Code Platforms</h3>
+                                    <p class="line-clamp-3 text-xs lg:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo laboriosam beatae deleniti officiis, distinctio maiores, qui quidem eveniet accusantium dolore, perferendis aliquid culpa iusto? Quibusdam voluptate debitis sint esse laboriosam!</p>
+                                    <div class="text-xs lg:text-sm font-semibold dt-purple mt-auto">July 02, 2022</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <hr class="line border-dark">
+                            <a href="" class="btn-outline-dt dt-dark border-dark whitespace-nowrap">
+                                Load More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10.0003 12.1429C11.1837 12.1429 12.1431 11.1835 12.1431 10C12.1431 8.81657 11.1837 7.85718 10.0003 7.85718C8.81681 7.85718 7.85742 8.81657 7.85742 10C7.85742 11.1835 8.81681 12.1429 10.0003 12.1429Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.5001 11.7858C18.4863 11.7858 19.2858 10.9863 19.2858 10.0001C19.2858 9.01385 18.4863 8.21436 17.5001 8.21436C16.5138 8.21436 15.7144 9.01385 15.7144 10.0001C15.7144 10.9863 16.5138 11.7858 17.5001 11.7858Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.50007 11.7858C3.48629 11.7858 4.28578 10.9863 4.28578 10.0001C4.28578 9.01385 3.48629 8.21436 2.50007 8.21436C1.51385 8.21436 0.714355 9.01385 0.714355 10.0001C0.714355 10.9863 1.51385 11.7858 2.50007 11.7858Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <hr class="line border-dark">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dark-section">
+                <img src="./src/images/divtorn.png" alt="" class="w-full">
+                <div class="p-5 container mx-auto py-[4em]">
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between">
+                        <div class="flex flex-col h-[auto] lg:h-[20em] mb-[3em] lg:mb-0">
+                            <h2 class="face-28d dt-purple text-6xl lg:text-8xl uppercase">Subscribe</h2>
+                            <div class="flex items-center gap-3 mt-auto">
+                                <input type="text" placeholder="your@mail.com" class="border-2 border-light outline-0 rounded-full p-3 px-5 bg-transparent w-full lg:min-w-[15em]">
+                                <div class="cursor-pointer flex items-center justify-center p-2 bg-purple rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                        <path d="M27.8686 17.3834C27.8978 17.0772 27.9123 16.7709 27.9123 16.4647C27.9123 11.4626 25.8269 6.0376 23.7415 6.0376C21.6561 6.0376 19.5707 8.12301 17.4998 8.12301C15.4144 8.12301 13.329 6.0376 11.2436 6.0376C9.15817 6.0376 7.08734 11.3605 7.08734 16.4647C7.08734 16.7709 7.08734 17.0772 7.1165 17.3834C10.529 18.1563 13.9998 18.5501 17.4998 18.5355C21.0728 18.5355 24.5436 18.1418 27.8686 17.3834ZM5.03109 26.5126C13.1592 28.9553 21.8259 28.9553 29.954 26.5126C30.5695 26.3059 31.1053 25.9125 31.4869 25.3872C31.8685 24.8618 32.0769 24.2306 32.0832 23.5813C32.0832 22.9251 31.879 22.298 31.5144 21.7584C31.1353 21.2334 30.6248 20.8397 29.9832 20.6209C26.0457 21.8751 21.8748 22.5313 17.4998 22.5313C13.1248 22.5313 8.93942 21.8751 5.00192 20.6209C4.37484 20.8397 3.86442 21.248 3.48525 21.773C3.12067 22.298 2.9165 22.9251 2.9165 23.5813C2.9165 24.9522 3.80609 26.1043 5.03109 26.5126Z" fill="#F7EFE5"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col h-[20em] max-w-[19em] ms-auto">
+                            <p class="dt-light text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam et aperiam dolorem illum dignissimos enim quod laborum perspiciatis nemo minima doloremque modi cum odio, mollitia, suscipit exercitationem, optio nihil amet.</p>
+                            <hr class="line bg-light w-[10em] mt-auto ms-auto">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="p-5 py-[5em] h-screen relative dt-dark" style="background: url('./src/images/texture.png') no-repeat top center;background-size: cover;">
@@ -107,17 +215,17 @@
                     <div class="container mx-auto h-full">
                         <div class="flex flex-col h-full">
                             <div class="flex items-center flex-auto">
-                                <div class="flex items-center gap-6 small-caps rotate-[90deg] flex-initial w-[3em]">
+                                <div class="flex items-center gap-6 small-caps rotate-[90deg] flex-initial w-[5%]">
                                     <div class="line w-[5px] h-[3em] p-2 rotate-90"></div>
                                     <h4 class="text-dark whitespace-nowrap z-10">dove@devtektif.com</h4>
                                 </div>
-                                <div class="flex items-center h-full justify-center flex-auto">
+                                <div class="flex items-center h-full justify-center flex-initial w-[85%]">
                                     <div class="relative">
                                         <h2 class="text-8xl face-28d uppercase dt-purple opacity-30 text-center">Touch Us</h2>
                                         <p class="small-caps max-w-[20em] text-center mt-[-3em] font-semibold mx-auto">Ask us about your problem, or open case to investigate!</p>
                                     </div>
                                 </div>
-                                <div class="flex-initial w-[3em] rotate-90">
+                                <div class="flex-initial w-[5%] rotate-90">
                                     <a href="" class="btn-outline-dt dt-dark border-dark rotate-180 whitespace-nowrap font-semibold me-auto">
                                         Touch Now
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
