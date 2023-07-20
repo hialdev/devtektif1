@@ -78,6 +78,38 @@ h1, h2, h3, h4 {
   transition: all 3s ease-in-out;
 }
 
+.content h2 {
+  @apply text-3xl mb-5;
+}
+.content h2:before {
+  content: "#";
+  color: #674188;
+  margin-right: 0.6em;
+}
+.content h3 {
+  @apply text-2xl mb-5;
+}
+.content h3:before {
+  content: "#";
+  color: #674188;
+  margin-right: 0.6em;
+}
+.content h4 {
+  @apply text-xl mb-5;
+}
+.content h5 {
+  @apply text-lg mb-4;
+}
+.content h6 {
+  @apply text-base mb-4;
+}
+.content p {
+  @apply mb-3;
+}
+.content img {
+  @apply mb-5 w-full;
+}
+
 .toggle {
   display: flex;
   flex-direction: column;
